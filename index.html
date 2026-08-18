@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Gargoua | Portfolio</title>
+    <link rel="icon" href="img/logo.webp" type="image/webp">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ===== ÉCRAN DE DÉMARRAGE ===== -->
+<div id="intro">
+    <img src="img/logo.webp" alt="Anthony Gargoua Logo" id="logo">
+</div>
+
+<header>
+    <div class="nav-container">
+        <!-- Le burger pour le menu mobile -->
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+        
+        <a href="index.html" class="nav-logo">
+            <img src="img/logo.webp" alt="Logo">
+        </a>
+
+        <nav>
+            <a href="index.html" class="active">Accueil</a>
+            <a href="presentation.html">Présentation</a>
+            <a href="competences.html">Compétences</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="files/CV_Anthony_GARGOUA_2026.pdf" target="_blank" rel="noopener" class="btn-cv" download>
+                CV <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anthony-gargoua-776571196/" target="_blank" rel="noopener" class="nav-social" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/AnthonyGargoua" target="_blank" rel="noopener" class="nav-social" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <button id="theme-toggle">🌑</button>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+    <!-- HERO SECTION -->
+    <section class="hero fade">
+        <span class="eyebrow">💻 Développeur Full Stack en devenir</span>
+        <h1 class="title">Anthony <span class="accent-word">GARGOUA</span> 💁🏻‍♂️</h1>
+        <p class="subtitle">Bienvenue sur mon portfolio. Découvrez mon parcours, mes projets et mes compétences techniques en développement logiciel.</p>
+        <div class="hero-actions">
+            <a href="projets.html" class="btn-pill btn-pill--primary">Voir mes projets</a>
+            <a href="contact.html" class="btn-pill btn-pill--ghost">Me contacter</a>
+        </div>
+    </section>
+
+    <!-- SECTION BIO -->
+    <section class="bio fade">
+        <div class="bio-text">
+            <h2>À propos de moi</h2>
+            <p>
+                Je suis titulaire de deux diplômes Bac+3 : <strong>Marketing Digital & Social Media</strong> et <strong>Pilotage du Développement Commercial</strong>. 
+                Mon parcours en alternance m'a permis de lier stratégie commerciale et développement web.
+            </p>
+            <p>
+                Après des expériences enrichissantes comme commercial chez <strong>Peugeot</strong> et assistant polyvalent, ma passion pour la tech m'a poussé à me spécialiser. 
+                Je vise désormais un <strong>Master en Développement de Solutions Logicielles</strong>.
+            </p>
+            <p>
+                Polyvalent et curieux, je souhaite combiner mon sens du commerce et ma vision digitale pour concevoir des outils innovants et performants.
+            </p>
+        </div>
+
+        <div class="bio-photo">
+            <img src="img/anthony.webp" alt="Photo de profil Anthony Gargoua">
+        </div>
+    </section>
+</main>
+
+<!-- Bouton retour en haut -->
+<button id="back-to-top" aria-label="Retour en haut de la page">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
