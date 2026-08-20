@@ -47,7 +47,7 @@ body {
     position: relative;
 }
 
-/* Halo lumineux global façon "glow" en fond de page */
+/* Halo lumineux vert sur tout le site en fond de page */
 body::before {
     content: "";
     position: fixed;
@@ -65,7 +65,7 @@ body::before {
 
 header, main, footer { position: relative; z-index: 1; }
 
-/* ===== LOADER (INTRO) ===== */
+/* Chargement d'entrée du site */
 #intro {
     position: fixed;
     top: 0;
@@ -84,7 +84,7 @@ header, main, footer { position: relative; z-index: 1; }
     opacity: 0; /* Géré par GSAP */
 }
 
-/* ===== NAVIGATION — pilule flottante ===== */
+/* Navigation */
 header {
     background: transparent;
     position: sticky;
@@ -197,7 +197,7 @@ nav a:hover::after, nav a.active::after {
     transform: translateY(-2px);
 }
 
-/* MENU BURGER — se transforme en croix (X) quand le menu est ouvert */
+/* Menu burger */
 .burger {
     display: none;
     flex-direction: column;
@@ -227,7 +227,7 @@ nav a:hover::after, nav a.active::after {
 .burger.active span:nth-child(2) { opacity: 0; }
 .burger.active span:nth-child(3) { transform: translateY(0) rotate(-45deg); }
 
-/* ===== BOUTON RETOUR EN HAUT ===== */
+/* Bouton retour en haut de page */
 #back-to-top {
     position: fixed;
     right: 22px;
@@ -276,7 +276,7 @@ nav a:hover::after, nav a.active::after {
     justify-content: center;
 }
 
-/* ===== CONTENU GLOBAL ===== */
+/* Contenu global */
 .content {
     max-width: 1100px;
     margin: 40px auto;
@@ -317,7 +317,7 @@ nav a:hover::after, nav a.active::after {
     margin-bottom: 18px;
 }
 
-/* ===== HERO (ACCUEIL) ===== */
+/* Page d'accueil */
 .hero {
     padding: 70px 0 30px;
     text-align: left;
@@ -374,7 +374,7 @@ nav a:hover::after, nav a.active::after {
     transform: translateY(-2px);
 }
 
-/* ===== SECTION BIO (ACCUEIL) ===== */
+/* Biographie et photo */
 .bio {
     display: flex;
     align-items: center;
@@ -421,7 +421,7 @@ nav a:hover::after, nav a.active::after {
     border: 2px solid var(--accent-border);
 }
 
-/* ===== GRILLES DE COMPÉTENCES ===== */
+/* Compétences */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -457,7 +457,7 @@ nav a:hover::after, nav a.active::after {
     margin: -14px 0 20px;
 }
 
-/* Grille d'icônes de compétences (remplace les barres de progression) */
+/* Icônes de compétences */
 .skill-icons {
     display: flex;
     flex-wrap: wrap;
@@ -474,7 +474,7 @@ nav a:hover::after, nav a.active::after {
     width: 84px;
 }
 
-/* Le badge circulaire commun à tous les types d'icônes (police, image couleur, silhouette) */
+/* Badge circulaire commun à tous les types d'icônes (police, image couleur, silhouette) */
 .skill-icon-badge {
     width: 60px;
     height: 60px;
@@ -494,26 +494,24 @@ nav a:hover::after, nav a.active::after {
     transition: color 0.25s ease;
 }
 
-/* Java : pas de logo officiel libre de droits disponible, mais on garde sa vraie couleur de marque (orange) plutôt que le vert du thème */
+/* Java : pas de logo officiel libre de droits disponible */
 .skill-icon-badge--java i {
     color: #ED8B00;
 }
 
-/* Suite Adobe : pas de logo officiel libre de droits disponible, mais on garde le rouge Adobe plutôt que le vert du thème */
+/* Suite Adobe : pas de logo officiel libre de droits disponible */
 .skill-icon-badge--adobe i {
     color: #FF0000;
 }
 
-/* Logos de marque en couleurs réelles (fichiers SVG dans img/icons/) */
+/* Logos de marque en couleurs réelles */
 .skill-icon-badge img {
     width: 30px;
     height: 30px;
     object-fit: contain;
 }
 
-/* Express, GitHub, Next.js, Angular : couleur de marque officielle très sombre (proche du noir),
-   invisible sur le fond sombre des cartes. Un halo clair translucide (pas un aplat blanc opaque)
-   suffit à les rendre lisibles sans détonner avec les autres icônes, en thème sombre comme clair. */
+/* Express, GitHub, Next.js, Angular : couleur de marque officielle */
 .skill-icon-badge--soft-light {
     background: rgba(255, 255, 255, 0.16);
 }
@@ -535,7 +533,6 @@ nav a:hover::after, nav a.active::after {
     color: var(--accent-strong);
 }
 
-/* On garde ces couleurs de marque même au survol (pas de virage vers le vert du thème) */
 .skill-icon:hover .skill-icon-badge--java i {
     color: #ED8B00;
 }
@@ -544,7 +541,7 @@ nav a:hover::after, nav a.active::after {
     color: #FF0000;
 }
 
-/* Catégorie "à venir" (future stack) : mise en avant plus discrète */
+/* Catégorie "à venir" (future stack) */
 .skill-category--soon {
     border-style: dashed;
 }
@@ -557,7 +554,7 @@ nav a:hover::after, nav a.active::after {
     opacity: 1;
 }
 
-/* ===== GRILLE PROJETS (SITES WEB CLICABLES) ===== */
+/* Projets */
 .websites-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -615,7 +612,7 @@ nav a:hover::after, nav a.active::after {
     font-size: 1rem;
 }
 
-/* ===== GRILLE MAQUETTES (GALLERY) ===== */
+/* Maquettes */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -637,7 +634,7 @@ nav a:hover::after, nav a.active::after {
     transform: scale(1.03);
 }
 
-/* ===== CARTES PRÉSENTATION (INTERESTS) ===== */
+/* Présentation des projets */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -674,7 +671,7 @@ nav a:hover::after, nav a.active::after {
     text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
-/* ===== FORMULAIRE DE CONTACT ===== */
+/* Formulaire de contact */
 .contact-form {
     max-width: 600px;
     margin: 30px auto 0;
@@ -727,7 +724,7 @@ nav a:hover::after, nav a.active::after {
 .form-message.success { color: var(--accent-strong); }
 .form-message.error { color: #e05252; }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* Responsive Mobile et Tablette */
 @media (max-width: 1024px) {
     .websites-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .cards-container { grid-template-columns: repeat(2, 1fr); }

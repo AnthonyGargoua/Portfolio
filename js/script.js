@@ -1,7 +1,7 @@
 const intro = document.getElementById("intro");
 const introLogo = document.getElementById("logo");
 
-// --- ANIMATION D'ENTRÉE (LOADER) ---
+// Animation d'entrée (chargement)
 if (intro) {
     const tl = gsap.timeline();
     tl.to(introLogo, { opacity: 1, scale: 1.1, duration: 0.2, ease: "power2.out" })
@@ -19,7 +19,7 @@ if (intro) {
     window.addEventListener("DOMContentLoaded", launchPageAnimations);
 }
 
-// --- ANIMATIONS GLOBALES ---
+// Animations globales
 function launchPageAnimations() {
     // Apparition des textes
     gsap.to(".fade", { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: "power2.out" });
@@ -40,17 +40,16 @@ function launchPageAnimations() {
     }
 }
 
-// --- MENU BURGER ---
+// Memu burger (responsive)
 const burger = document.querySelector(".burger");
 const navMenu = document.querySelector("nav");
 if (burger) {
     burger.addEventListener("click", () => {
         navMenu.classList.toggle("active");
-        burger.classList.toggle("active"); // Optionnel : pour animer le burger si tu ajoutes du CSS
     });
 }
 
-// --- BOUTON RETOUR EN HAUT ---
+//Bouton retour en haut de page
 const backToTop = document.getElementById("back-to-top");
 if (backToTop) {
     window.addEventListener("scroll", () => {
@@ -61,7 +60,7 @@ if (backToTop) {
     });
 }
 
-// --- THEME (sombre par défaut, clair en option) ---
+// Thème (sombre par défaut, clair en option)
 const toggleBtn = document.getElementById("theme-toggle");
 if (toggleBtn) {
     if (localStorage.getItem("theme") === "light") {
